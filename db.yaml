@@ -3,7 +3,7 @@
   become: yes
   vars:
     login_host: db.pavandevops.online
-  task:
+  tasks:
   - name: Install MySql server
     ansible.builtin.dnf:
       name: Mysql server
