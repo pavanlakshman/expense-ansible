@@ -6,12 +6,12 @@
   tasks:
   - name: Install MySql server
     ansible.builtin.dnf:
-      name: Mysql server
+      name: mysql-server
       state: latest
 
   - name: start and enable MySql server
     ansible.builtin.service:
-      name: Mysqld
+      name: mysqld
       state: started
       enables: yes
   # Check password is setup or not
