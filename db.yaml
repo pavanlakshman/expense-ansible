@@ -9,7 +9,7 @@
       name: mysql-server
       state: latest
 
-  - name: start and enable MySql server
+  - name: Start and Enable MySql server
     ansible.builtin.service:
       name: mysqld
       state: started
@@ -19,7 +19,7 @@
     community.mysql.mysql_info:
        login_user: root
        login_password: ExpenseApp@1
-       login_host: "{{ local_host }}"
+       login_host: "{{ login_host }}"
        filter: version
     ignore_errors: yes
     register: mysql_connection_output
