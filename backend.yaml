@@ -1,7 +1,7 @@
 - name: configure backend server
   become: yes
   vars:
-    login_host: root
+    login_host: db.pavandevops.online
     login_password: ExpenseApp@1
   hosts: backend
   tasks:
