@@ -13,5 +13,7 @@
       state: started
       enable: yes
 
-  #- name: 
-   # ansible.builtin.
+  - name: 
+    ansible.builtin.file:
+      path: /usr/share/nginx/html/*
+      state: absent
