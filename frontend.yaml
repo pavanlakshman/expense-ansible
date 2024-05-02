@@ -6,14 +6,14 @@
     ansible.builtin.dnf:
       name: nginx
       state: latest
-
+  
   - name: start and enable nginx
     ansible.builtin.service:
       name: nginx
       state: started
-      enable: yes
+      enabled: yes
 
   - name: delete default website
     ansible.builtin.file:
-      path: /usr/share/nginx/html/*
+      path: /usr/share/nginx/html
       state: absent
