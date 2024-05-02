@@ -22,7 +22,7 @@
   - name: install python mysql dependencies
     ansible.builtin.pip:
       name:
-      - PyMySQL
+      - PyMySQL  # Ansible developed in python. This command is for connection between the ansible and python.
       - cryptography
       executable: pip3.9 # pip3.11 if python version is 3.11
 
