@@ -60,4 +60,4 @@
       login_password: "{{ login_password }}"
       login_host: "{{ login_host }}"
       targer: /app/schema/backend.sql
-      state: dump
+      state: import
