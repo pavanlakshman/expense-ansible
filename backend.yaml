@@ -58,9 +58,9 @@
 
   - name: import data into mysql
     community.mysql.mysql_db:
-      name: all
       login_user: root
       login_password: "{{ login_password }}"
       login_host: "{{ login_host }}"
       targer: /app/schema/backend.sql
       state: import
+      name: all
